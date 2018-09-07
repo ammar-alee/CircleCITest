@@ -6,11 +6,6 @@ jobs:
       - image: circleci/android:api-26-alpha
     environment:
       JVM_OPTS: -Xmx4608m
-    branches:
-          only:
-            - master
-            - staging
-            - develop
     steps:
       - checkout
       - restore_cache:
