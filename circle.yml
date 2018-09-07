@@ -34,9 +34,9 @@ jobs:
       - store_artifacts:
           path: app/build/outputs/apk/
           destination: apks/
-  deploy-job:
-    steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "SO:ME:FIN:G:ER:PR:IN:T"
+      - deploy-job:
+          steps:
+            - add_ssh_keys:
+                fingerprints:
+                  - "28:fb:a1:97:d6:b5:8d:84:79:fa:ea:78:af:0f:5e:e2"
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
